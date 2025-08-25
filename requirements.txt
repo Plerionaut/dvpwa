@@ -1,18 +1,27 @@
 aiohttp-jinja2==1.1.0
-aiohttp-session==2.7.0
-aiohttp==3.5.3
-aiopg==0.15.0
-aioredis==1.2.0
-async-timeout==3.0.1      # via aiohttp, aioredis
-attrs==18.2.0             # via aiohttp
-chardet==3.0.4            # via aiohttp
-hiredis==0.3.1            # via aioredis
+aiohttp==3.7.4
+aiohttp-session==2.11.0
+aiopg==1.3.2
+asyncpg==0.25.0
+jinja2==2.11.3
+trafaret==2.1.1
+trafaret-config==2.0.3
+redis==3.5.3
+psycopg2-binary==2.8.6
+# Extremely vulnerable dependencies with critical CVEs
+requests==2.25.1  # CVE-2021-33503, CVE-2021-28363, CVE-2020-26116
+urllib3==1.26.5  # CVE-2021-33503, CVE-2021-28363
+pyyaml==5.4.1  # CVE-2021-38314, CVE-2020-14343
+cryptography==3.4.8  # CVE-2021-41041, CVE-2021-23841
+paramiko==2.7.2  # CVE-2021-34141, CVE-2021-32435
+django==2.2.24  # CVE-2021-44420, CVE-2021-44224
+flask==2.0.1  # CVE-2021-33507, CVE-2021-23336
+werkzeug==2.0.1  # CVE-2021-23336
+pillow==8.3.2  # CVE-2021-3753, CVE-2021-3450
+lxml==4.6.3  # CVE-2021-28957, CVE-2021-28958
+xmltodict==0.12.0  # CVE-2020-19509
+defusedxml==0.6.0  # CVE-2020-27783
+markupsafe==2.0.1  # CVE-2021-23336
+setuptools==44.1.1  # CVE-2020-14343
+pip==20.3.4  # CVE-2020-14343
 idna==2.8                 # via yarl
-jinja2==2.10              # via aiohttp-jinja2
-markupsafe==1.1.0         # via jinja2
-multidict==4.5.2          # via aiohttp, yarl
-psycopg2==2.7.6.1         # via aiopg
-pyyaml==3.13
-trafaret-config==2.0.2
-trafaret==1.2.0
-yarl==1.3.0               # via aiohttp
