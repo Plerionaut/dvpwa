@@ -1,5 +1,5 @@
 aiohttp-jinja2==1.1.0
-aiohttp==3.7.4
+aiohttp==3.12.14
 aiohttp-session==2.11.0
 aiopg==1.3.2
 asyncpg==0.25.0
